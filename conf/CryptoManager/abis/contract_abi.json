@@ -399,6 +399,72 @@
 	{
 		"inputs": [
 			{
+				"internalType": "address",
+				"name": "user",
+				"type": "address"
+			},
+			{
+				"internalType": "uint256",
+				"name": "tokenId",
+				"type": "uint256"
+			}
+		],
+		"name": "getCertificateById",
+		"outputs": [
+			{
+				"components": [
+					{
+						"internalType": "uint256",
+						"name": "tokenId",
+						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "data",
+						"type": "string"
+					},
+					{
+						"internalType": "address",
+						"name": "issuer",
+						"type": "address"
+					},
+					{
+						"internalType": "address",
+						"name": "reviewer",
+						"type": "address"
+					},
+					{
+						"internalType": "bool",
+						"name": "isVerified",
+						"type": "bool"
+					},
+					{
+						"internalType": "string",
+						"name": "pdfLink",
+						"type": "string"
+					},
+					{
+						"internalType": "bool",
+						"name": "isPending",
+						"type": "bool"
+					},
+					{
+						"internalType": "enum CertificateVerify.CertificateStatus",
+						"name": "status",
+						"type": "uint8"
+					}
+				],
+				"internalType": "struct CertificateVerify.Certificate",
+				"name": "",
+				"type": "tuple"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
 				"internalType": "uint256",
 				"name": "tokenId",
 				"type": "uint256"
