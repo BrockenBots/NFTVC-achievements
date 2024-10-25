@@ -67,7 +67,7 @@ Example Request:
   "user_address": "0x123...",
   "reviewer_address": "0x456...",
   "data": "Certificate Data",
-  "pdf_link": "https://example.com/certificate.pdf"
+  "pdf_link": "link"
 }
 4. Check Certificate Status
 GET /api/check-status/{token_id}/
@@ -99,6 +99,8 @@ git clone <repository_url>
 cd CryptoManager
 2. Install dependencies:
 pip install -r requirements.txt
+3. Run
+python manage.py runserver
 <!-- 3. Setup Ganache:
 Ensure Ganache is installed and running on http://127.0.0.1:7545.
 Update the ganache_url variable in your views if needed.
